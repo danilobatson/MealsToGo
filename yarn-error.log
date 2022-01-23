@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/minenotyours/.nvm/versions/node/v15.14.0/bin/node /opt/homebrew/bin/yarnpkg add expo@^44.0.0
+  /Users/minenotyours/.nvm/versions/node/v15.14.0/bin/node /opt/homebrew/bin/yarn install
 
 PATH: 
   /Users/minenotyours/.rvm/gems/ruby-2.7.2/bin:/Users/minenotyours/.rvm/gems/ruby-2.7.2@global/bin:/Users/minenotyours/.rvm/rubies/ruby-2.7.2/bin:/Users/minenotyours/.nvm/versions/node/v15.14.0/bin:/Users/minenotyours/.nvm/versions/node/v15.14.0/bin:/Users/minenotyours/.asdf/shims:/Users/minenotyours/.asdf/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/mongodb-community@4.2/bin:/Library/Apple/usr/bin:/Users/minenotyours/.rvm/gems/ruby-2.7.2/bin:/Users/minenotyours/.rvm/gems/ruby-2.7.2@global/bin:/Users/minenotyours/.rvm/rubies/ruby-2.7.2/bin:/Users/minenotyours/.nvm/versions/node/v15.14.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/Users/minenotyours/.rvm/bin
