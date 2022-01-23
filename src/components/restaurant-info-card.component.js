@@ -3,7 +3,7 @@ import { StyleSheet, Text} from 'react-native';
 import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
 
 
-export const RestaurantInfo = ({ restaurant = {} }) => {
+export const RestaurantInfoCard = ({ restaurant = {} }) => {
   const {
     name = "Some Restaurant",
     icon,
