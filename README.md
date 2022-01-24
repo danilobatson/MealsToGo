@@ -7,7 +7,6 @@ Open the camera app on your device and scan the code below.
 
 ![image](https://user-images.githubusercontent.com/69876068/150671858-5748b286-2ada-4b01-a70d-e9937edc1dd3.png)
 
-Or, copy and paste this link on your mobile device. exp://exp.host/@dbatson09/MealsToGo 
 
 
 
