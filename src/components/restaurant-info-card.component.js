@@ -1,24 +1,28 @@
 import React from 'react'
-import { Button, Card, Title, Paragraph } from 'react-native-paper';
-import {Text} from 'react-native'
+import { Button, Card } from 'react-native-paper';
+import {Text, View} from 'react-native'
 import styled from 'styled-components'
 
 const RestaurantCard = styled(Card)`
   backgroundColor: white;
 `
-const RestaurantCardTitle = styled(Text)`
+const Title = styled(Text)`
+  font-family: ${(props) => props.theme.fonts.heading};
   color: ${props => props.theme.colors.ui.primary};
   fontSize: ${props => props.theme.fontSizes.h4};
 `
-const RestaurantAddress = styled(Text)`
+const Address = styled(Text)`
+  font-family: ${(props) => props.theme.fonts.body};
+  font-size: ${(props) => props.theme.fontSizes.caption};
   color: ${props => props.theme.colors.ui.primary};
   fontSize: ${props => props.theme.fontSizes.title};
 `
-const RestaurantRating = styled(Text)`
+const Rating = styled(Text)`
+  font-family: ${(props) => props.theme.fonts.monospace};
   color: ${props => props.theme.colors.ui.secondary};
   fontSize: ${props => props.theme.fontSizes.body};
 `
-const RestaurantCardCover = styled(Card.Cover)`
+const CardCover = styled(Card.Cover)`
   padding: ${props => props.theme.space.L};
   background-color: white;
 `;
@@ -38,11 +42,11 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
   return (
     <>
       <RestaurantCard elevation={5} >
-        <RestaurantCardTitle >{name}</RestaurantCardTitle>
-        <RestaurantCardCover key={name} source={{ uri: photos[0] }} />
+        <Title >{name}</Title>
+        <CardCover key={name} source={{ uri: photos[0] }} />
         <Card.Content>
-          <RestaurantAddress >{address} </RestaurantAddress>
-          <RestaurantRating >Rating: {rating}</RestaurantRating>
+          <Address >{address} </Address>
+          <Rating >Rating: {rating}</Rating>
         </Card.Content>
         <Card.Actions>
           <Button>Cancel</Button>
