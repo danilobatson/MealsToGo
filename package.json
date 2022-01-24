@@ -27,7 +27,7 @@
   "resolutions": {
     "styled-components": "^5"
   },
-  "homepage": "http://danilobatson.github.io/expo-gh-pages",
+  "homepage": "http://danilobatson.github.io/MealsToGo",
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "eslint-plugin-react-native": "^4.0.0",
