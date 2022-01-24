@@ -4,6 +4,8 @@ import { Text, View } from 'react-native'
 import styled from 'styled-components'
 import { SvgXml } from 'react-native-svg'
 import star from '../../assets/star'
+import open from '../../assets/open'
+
 
 const RestaurantCard = styled(Card)`
   backgroundColor: white;
@@ -15,7 +17,6 @@ const Title = styled(Text)`
 `
 const Address = styled(Text)`
   font-family: ${(props) => props.theme.fonts.body};
-  font-size: ${(props) => props.theme.fontSizes.caption};
   color: ${props => props.theme.colors.ui.primary};
   fontSize: ${props => props.theme.fontSizes.title};
 `
@@ -29,7 +30,17 @@ const Rating = styled(View)`
 flexDirection: row;
   paddingTop: ${props => props.theme.space.MD};
   paddingBottom: ${props => props.theme.space.MD};
+`
+const IconView = styled(View)`
+  flexDirection: row;
+  justify-content: space-between;
+  align-items: center
+`
 
+const Closed = styled(Text)`
+  font-family: ${(props) => props.theme.fonts.monospace};
+  fontSize: ${(props) => props.theme.fontSizes.h5};
+  color: ${props => props.theme.colors.ui.error};
 `
 
 export const RestaurantInfoCard = ({ restaurant = {} }) => {
@@ -40,9 +51,9 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
       "https://www.foodiesfeed.com/wp-content/uploads/2019/06/top-view-for-box-of-2-burgers-home-made-600x899.jpg",
     ],
     address = "100 Main Ave. Miami, FL",
-    isOpenNow = true,
+    isOpenNow = false,
     rating = 4,
-    isClosedTemporarily,
+    isClosedTemporarily = true,
   } = restaurant;
 
   const ratingArray = Array.from(new Array(Math.floor(rating)))
@@ -54,13 +65,21 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
         <CardCover key={name} source={{ uri: photos[0] }} />
         <Card.Content>
           <Address >{address} </Address>
-          <Rating>
-            {ratingArray.map(() => {
-              return (
-                <SvgXml xml={star} width={20} height={20} />
-              )
-            })}
-          </Rating>
+          <IconView>
+            <Rating>
+              {ratingArray.map((rating, idx) => {
+                return (
+                  <SvgXml key={idx} xml={star} width={20} height={20} />
+                )
+              })}
+            </Rating>
+            {isClosedTemporarily && (
+              <Closed variant="label">
+                CLOSED TEMPORARILY
+              </Closed>
+            )}
+            {isOpenNow && <SvgXml xml={open} width={20} height={20} />}
+          </IconView>
         </Card.Content>
         <Card.Actions>
           <Button>Cancel</Button>
