@@ -1,0 +1,37 @@
+{
+  "files": {
+    "app.js": "/expo-gh-pages/static/js/app.2c8f7c49.chunk.js",
+    "app.js.map": "/expo-gh-pages/static/js/app.2c8f7c49.chunk.js.map",
+    "runtime~app.js": "/expo-gh-pages/static/js/runtime~app.57d3d678.js",
+    "runtime~app.js.map": "/expo-gh-pages/static/js/runtime~app.57d3d678.js.map",
+    "static/js/2.a1048191.chunk.js": "/expo-gh-pages/static/js/2.a1048191.chunk.js",
+    "static/js/2.a1048191.chunk.js.map": "/expo-gh-pages/static/js/2.a1048191.chunk.js.map",
+    "fonts/Lato_100Thin.ttf": "/expo-gh-pages/./fonts/Lato_100Thin.ttf",
+    "fonts/Lato_300Light.ttf": "/expo-gh-pages/./fonts/Lato_300Light.ttf",
+    "fonts/Lato_400Regular.ttf": "/expo-gh-pages/./fonts/Lato_400Regular.ttf",
+    "fonts/Lato_400Regular_Italic.ttf": "/expo-gh-pages/./fonts/Lato_400Regular_Italic.ttf",
+    "fonts/Lato_700Bold.ttf": "/expo-gh-pages/./fonts/Lato_700Bold.ttf",
+    "fonts/Lato_700Bold_Italic.ttf": "/expo-gh-pages/./fonts/Lato_700Bold_Italic.ttf",
+    "fonts/Lato_900Black.ttf": "/expo-gh-pages/./fonts/Lato_900Black.ttf",
+    "fonts/Lato_900Black_Italic.ttf": "/expo-gh-pages/./fonts/Lato_900Black_Italic.ttf",
+    "fonts/MaterialCommunityIcons.ttf": "/expo-gh-pages/./fonts/MaterialCommunityIcons.ttf",
+    "fonts/Oswald_200ExtraLight.ttf": "/expo-gh-pages/./fonts/Oswald_200ExtraLight.ttf",
+    "fonts/Oswald_300Light.ttf": "/expo-gh-pages/./fonts/Oswald_300Light.ttf",
+    "fonts/Oswald_400Regular.ttf": "/expo-gh-pages/./fonts/Oswald_400Regular.ttf",
+    "fonts/Oswald_500Medium.ttf": "/expo-gh-pages/./fonts/Oswald_500Medium.ttf",
+    "fonts/Oswald_600SemiBold.ttf": "/expo-gh-pages/./fonts/Oswald_600SemiBold.ttf",
+    "fonts/Oswald_700Bold.ttf": "/expo-gh-pages/./fonts/Oswald_700Bold.ttf",
+    "favicon-16.png": "/expo-gh-pages/favicon-16.png",
+    "favicon-32.png": "/expo-gh-pages/favicon-32.png",
+    "favicon.ico": "/expo-gh-pages/favicon.ico",
+    "index.html": "/expo-gh-pages/index.html",
+    "manifest.json": "/expo-gh-pages/manifest.json",
+    "serve.json": "/expo-gh-pages/serve.json",
+    "static/js/2.a1048191.chunk.js.LICENSE.txt": "/expo-gh-pages/static/js/2.a1048191.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime~app.57d3d678.js",
+    "static/js/2.a1048191.chunk.js",
+    "static/js/app.2c8f7c49.chunk.js"
+  ]
+}
