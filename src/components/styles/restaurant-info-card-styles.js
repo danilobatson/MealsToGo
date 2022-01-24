@@ -1,6 +1,7 @@
 import { Card } from 'react-native-paper';
-import { Text, View } from 'react-native'
+import {  View, Text } from 'react-native'
 import styled from 'styled-components'
+import {ContentText} from '../typography/text.component'
 
 
 export const RestaurantCard = styled(Card)`
@@ -23,16 +24,22 @@ export const CardCover = styled(Card.Cover)`
 `;
 
 export const Rating = styled(View)`
-flexDirection: row;
+  flexDirection: row;
   paddingTop: ${props => props.theme.space.MD};
   paddingBottom: ${props => props.theme.space.MD};
+  flexGrow: 8
 `
 export const IconView = styled(View)`
   flexDirection: row;
-  justify-content: space-between;
+  justify-content: space-between
   align-items: center
 `
-
+export const RightIconsView = styled(View)`
+  flexDirection: row;
+  justify-content: space-around
+  align-items: center
+  flexGrow: 1
+`
 export const Closed = styled(Text)`
   font-family: ${(props) => props.theme.fonts.monospace};
   fontSize: ${(props) => props.theme.fontSizes.h5};

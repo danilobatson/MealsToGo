@@ -1,22 +1,37 @@
 {
   "files": {
-    "app.js": "/static/js/app.5664a16a.chunk.js",
-    "app.js.map": "/static/js/app.5664a16a.chunk.js.map",
+    "app.js": "/static/js/app.2c8f7c49.chunk.js",
+    "app.js.map": "/static/js/app.2c8f7c49.chunk.js.map",
     "runtime~app.js": "/static/js/runtime~app.2e9f1821.js",
     "runtime~app.js.map": "/static/js/runtime~app.2e9f1821.js.map",
-    "static/js/2.ac7cea6a.chunk.js": "/static/js/2.ac7cea6a.chunk.js",
-    "static/js/2.ac7cea6a.chunk.js.map": "/static/js/2.ac7cea6a.chunk.js.map",
+    "static/js/2.1aff449d.chunk.js": "/static/js/2.1aff449d.chunk.js",
+    "static/js/2.1aff449d.chunk.js.map": "/static/js/2.1aff449d.chunk.js.map",
+    "fonts/Lato_100Thin.ttf": "/./fonts/Lato_100Thin.ttf",
+    "fonts/Lato_300Light.ttf": "/./fonts/Lato_300Light.ttf",
+    "fonts/Lato_400Regular.ttf": "/./fonts/Lato_400Regular.ttf",
+    "fonts/Lato_400Regular_Italic.ttf": "/./fonts/Lato_400Regular_Italic.ttf",
+    "fonts/Lato_700Bold.ttf": "/./fonts/Lato_700Bold.ttf",
+    "fonts/Lato_700Bold_Italic.ttf": "/./fonts/Lato_700Bold_Italic.ttf",
+    "fonts/Lato_900Black.ttf": "/./fonts/Lato_900Black.ttf",
+    "fonts/Lato_900Black_Italic.ttf": "/./fonts/Lato_900Black_Italic.ttf",
+    "fonts/MaterialCommunityIcons.ttf": "/./fonts/MaterialCommunityIcons.ttf",
+    "fonts/Oswald_200ExtraLight.ttf": "/./fonts/Oswald_200ExtraLight.ttf",
+    "fonts/Oswald_300Light.ttf": "/./fonts/Oswald_300Light.ttf",
+    "fonts/Oswald_400Regular.ttf": "/./fonts/Oswald_400Regular.ttf",
+    "fonts/Oswald_500Medium.ttf": "/./fonts/Oswald_500Medium.ttf",
+    "fonts/Oswald_600SemiBold.ttf": "/./fonts/Oswald_600SemiBold.ttf",
+    "fonts/Oswald_700Bold.ttf": "/./fonts/Oswald_700Bold.ttf",
     "favicon-16.png": "/favicon-16.png",
     "favicon-32.png": "/favicon-32.png",
     "favicon.ico": "/favicon.ico",
     "index.html": "/index.html",
     "manifest.json": "/manifest.json",
     "serve.json": "/serve.json",
-    "static/js/2.ac7cea6a.chunk.js.LICENSE.txt": "/static/js/2.ac7cea6a.chunk.js.LICENSE.txt"
+    "static/js/2.1aff449d.chunk.js.LICENSE.txt": "/static/js/2.1aff449d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime~app.2e9f1821.js",
-    "static/js/2.ac7cea6a.chunk.js",
-    "static/js/app.5664a16a.chunk.js"
+    "static/js/2.1aff449d.chunk.js",
+    "static/js/app.2c8f7c49.chunk.js"
   ]
 }

@@ -1,2 +1,0 @@
-(this.webpackJsonp=this.webpackJsonp||[]).push([[0],{38:function(e,n,t){"use strict";t.d(n,"a",(function(){return u}));var a=t(61),r=t(0),o=t.n(r),c=t(5),s=t(55),i=t(19);function u(){return o.a.createElement(i.a,{style:l.container},o.a.createElement(s.a,null,"Working on Meals To Go App"),o.a.createElement(a.a,{style:"auto"}))}var l=c.a.create({container:{flex:1,backgroundColor:"#fff",alignItems:"center",justifyContent:"center"}})},62:function(e,n,t){e.exports=t(84)}},[[62,1,2]]]);
-//# sourceMappingURL=app.5664a16a.chunk.js.map
