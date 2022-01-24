@@ -10,4 +10,3 @@ Open the camera app on your device and scan the code below.
 
 
 
-The alternate web version can be viewed at https://to-go-meals.vercel.app/
