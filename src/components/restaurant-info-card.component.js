@@ -1,15 +1,25 @@
 import React from 'react'
 import { Button, Card, Title, Paragraph } from 'react-native-paper';
+import {Text} from 'react-native'
 import styled from 'styled-components'
 
 const RestaurantCard = styled(Card)`
   backgroundColor: white;
 `
-const RestaurantCardTitle = styled(Card.Title)`
-  color: red;
+const RestaurantCardTitle = styled(Text)`
+  color: ${props => props.theme.colors.ui.primary};
+  fontSize: ${props => props.theme.fontSizes.h4};
+`
+const RestaurantAddress = styled(Text)`
+  color: ${props => props.theme.colors.ui.primary};
+  fontSize: ${props => props.theme.fontSizes.title};
+`
+const RestaurantRating = styled(Text)`
+  color: ${props => props.theme.colors.ui.secondary};
+  fontSize: ${props => props.theme.fontSizes.body};
 `
 const RestaurantCardCover = styled(Card.Cover)`
-  padding: 20px;
+  padding: ${props => props.theme.space.L};
   background-color: white;
 `;
 
@@ -28,11 +38,11 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
   return (
     <>
       <RestaurantCard elevation={5} >
-        <RestaurantCardTitle  title={name} />
+        <RestaurantCardTitle >{name}</RestaurantCardTitle>
         <RestaurantCardCover key={name} source={{ uri: photos[0] }} />
         <Card.Content>
-          <Paragraph >{address} </Paragraph>
-          <Paragraph >Rating: {rating}</Paragraph>
+          <RestaurantAddress >{address} </RestaurantAddress>
+          <RestaurantRating >Rating: {rating}</RestaurantRating>
         </Card.Content>
         <Card.Actions>
           <Button>Cancel</Button>
