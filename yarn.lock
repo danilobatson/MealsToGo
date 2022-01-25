@@ -7064,6 +7064,7 @@ __metadata:
     "@react-native-community/eslint-config": ^3.0.1
     "@react-navigation/bottom-tabs": ^6.0.9
     "@react-navigation/native": ^6.0.6
+    camelize: ^1.0.0
     eslint: ^8.7.0
     eslint-plugin-react-native: ^4.0.0
     expo: ~43.0.2
