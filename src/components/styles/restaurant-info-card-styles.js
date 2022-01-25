@@ -1,11 +1,11 @@
 import { Card } from 'react-native-paper';
-import {  View, Text } from 'react-native'
+import { View, Text } from 'react-native'
 import styled from 'styled-components'
-import {ContentText} from '../typography/text.component'
 
 
 export const RestaurantCard = styled(Card)`
   backgroundColor: white;
+  marginBottom: ${props => props.theme.space.L};
 `
 export const Title = styled(Text)`
   font-family: ${(props) => props.theme.fonts.heading};

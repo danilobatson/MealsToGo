@@ -52,8 +52,6 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
               <Image style={{ width: 15, height: 15 }} source={{ uri: icon }} />
             </RightIconsView>
           </IconView>
-          <Spacer position="left" size="large">
-          </Spacer>
         </Card.Content>
         <Card.Actions>
           <Button>Cancel</Button>
