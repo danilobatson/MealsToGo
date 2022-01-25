@@ -42,13 +42,14 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
                 )
               })}
             </Rating>
-            {isClosedTemporarily && (
-              <Closed variant="label">
-                CLOSED TEMPORARILY
-              </Closed>
-            )}
+            {isClosedTemporarily ? <Closed variant="label">
+              CLOSED TEMPORARILY
+            </Closed> :
+              <SvgXml xml={open} width={30} height={30} />
+            }
+
             <RightIconsView>
-            {isOpenNow && <SvgXml xml={open} width={30} height={30} />}
+            
               <Image style={{ width: 15, height: 15 }} source={{ uri: icon }} />
             </RightIconsView>
           </IconView>

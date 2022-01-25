@@ -42,6 +42,9 @@ export const RightIconsView = styled(View)`
 `
 export const Closed = styled(Text)`
   font-family: ${(props) => props.theme.fonts.monospace};
-  fontSize: ${(props) => props.theme.fontSizes.h5};
+  fontSize: ${(props) => props.theme.fontSizes.body};
   color: ${props => props.theme.colors.ui.error}
+  flexGrow: 8
+  align-items: center
+  justify-content: flex-start
   `
