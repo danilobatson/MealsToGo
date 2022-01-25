@@ -4,7 +4,9 @@ import { Searchbar } from "react-native-paper";
 import { RestaurantInfoCard } from '../../../components/restaurant-info-card.component'
 import styled from "styled-components/native";
 
-import {SafeArea, SearchContainer, RestaurantList} from './styles/restaurants.screen.styles'
+import { SearchContainer, RestaurantList } from './styles/restaurants.screen.styles'
+import { SafeArea } from '../../../components/utils/safe-area.component'
+
 
 export const RestaurantsScreen = () => {
   return (
