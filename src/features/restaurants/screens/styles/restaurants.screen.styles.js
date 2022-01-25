@@ -15,5 +15,5 @@ export const  SearchContainer = styled(View)`
 export const  RestaurantList = styled(FlatList)`
   flex: 1;
   padding: ${props => props.theme.space.L};
-  background-color: ${props => props.theme.colors.brand.primary};
+  background-color: ${props => props.theme.colors.brand.secondary};
 `;

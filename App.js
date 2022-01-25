@@ -5,6 +5,7 @@ import { StatusBar as ExpoStatusBar } from 'expo-status-bar';
 import { ThemeProvider } from 'styled-components/native'
 import { theme } from './src/infrastructure/theme'
 import { Ionicons } from '@expo/vector-icons'
+import { LocationContextProvider } from "./src/services/location/location.context";
 
 import {
   useFonts as useOswald,
@@ -66,6 +67,7 @@ export default function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
+        <LocationContextProvider>
         <RestaurantsContextProvider>
           <NavigationContainer>
             <Tab.Navigator
@@ -79,7 +81,8 @@ export default function App() {
               <Tab.Screen name="Settings" component={Settings} />
             </Tab.Navigator>
           </NavigationContainer>
-        </RestaurantsContextProvider>
+          </RestaurantsContextProvider>
+        </LocationContextProvider>
       </ThemeProvider>
       <ExpoStatusBar style="auto" />
     </>
