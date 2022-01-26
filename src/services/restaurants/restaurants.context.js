@@ -3,6 +3,7 @@ import React, {
   useContext,
   createContext,
   useEffect,
+  useMemo,
 } from "react";
 
 import {
@@ -50,6 +51,7 @@ export const RestaurantsContextProvider = ({ children }) => {
         restaurants,
         isLoading,
         error,
+        setIsLoading
       }}
     >
       {children}

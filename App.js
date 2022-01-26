@@ -6,6 +6,7 @@ import { ThemeProvider } from 'styled-components/native'
 import { theme } from './src/infrastructure/theme'
 import { Ionicons } from '@expo/vector-icons'
 import { LocationContextProvider } from "./src/services/location/location.context";
+import { Modal, Portal, Button, Provider } from 'react-native-paper';
 
 import {
   useFonts as useOswald,
@@ -16,9 +17,12 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import { SafeArea } from './src/components/utils/safe-area.component'
+
 import { colors } from './src/infrastructure/theme/colors'
+
 import { RestaurantsContextProvider } from "./src/services/restaurants/restaurants.context";
-import { Navigation } from './src/infrastructure/navigation/'
+
+import { ModalContextProvider} from './src/services/modal/modal.context'
 
 const isAndroid = Platform.OS === 'android';
 const isIOS = Platform.OS === 'ios';
@@ -39,6 +43,12 @@ const Settings = () => (
 const Map = () => (
   <SafeArea>
     <Text>Map</Text>
+  </SafeArea>
+);
+
+const RestaurantsDetail = () => (
+  <SafeArea>
+    <Text>RestaurantsDetail</Text>
   </SafeArea>
 );
 const createScreenOptions = ({ route }) => {
@@ -67,8 +77,21 @@ export default function App() {
     <>
       <ThemeProvider theme={theme}>
         <LocationContextProvider>
-        <RestaurantsContextProvider>
-            <Navigation/>
+          <RestaurantsContextProvider>
+            <ModalContextProvider>
+          <NavigationContainer>
+            <Tab.Navigator
+              screenOptions={{
+                activeTintColor: `${colors.brand.secondary}`,
+                inactiveTintColor: `${colors.ui.secondary}`,
+              }, createScreenOptions
+              }>
+              <Tab.Screen name="Restaurants" component={RestaurantsScreen} />
+              <Tab.Screen name="Map" component={Map} />
+              <Tab.Screen name="Settings" component={Settings} />
+            </Tab.Navigator>
+              </NavigationContainer>
+            </ModalContextProvider>
           </RestaurantsContextProvider>
         </LocationContextProvider>
       </ThemeProvider>
