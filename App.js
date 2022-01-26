@@ -1,5 +1,7 @@
 import React from 'react';
-import { Platform, Text } from 'react-native';
+import { Platform, Text, Dimensions, View, StyleSheet } from 'react-native';
+import MapView from 'react-native-maps';
+import {MapScreen} from './src/features/map/screens/map.screen'
 import { RestaurantsScreen } from './src/features/restaurants/screens/restaurants.screen'
 import { StatusBar as ExpoStatusBar } from 'expo-status-bar';
 import { ThemeProvider } from 'styled-components/native'
@@ -40,17 +42,8 @@ const Settings = () => (
     <Text>Settings</Text>
   </SafeArea>
 );
-const Map = () => (
-  <SafeArea>
-    <Text>Map</Text>
-  </SafeArea>
-);
 
-const RestaurantsDetail = () => (
-  <SafeArea>
-    <Text>RestaurantsDetail</Text>
-  </SafeArea>
-);
+
 const createScreenOptions = ({ route }) => {
   const iconName = TAB_ICON[route.name];
   return {
@@ -87,7 +80,7 @@ export default function App() {
               }, createScreenOptions
               }>
               <Tab.Screen name="Restaurants" component={RestaurantsScreen} />
-              <Tab.Screen name="Map" component={Map} />
+                  <Tab.Screen name="Map" component={MapScreen} />
               <Tab.Screen name="Settings" component={Settings} />
             </Tab.Navigator>
               </NavigationContainer>
@@ -99,3 +92,16 @@ export default function App() {
     </>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  map: {
+    width: Dimensions.get('window').width,
+    height: Dimensions.get('window').height,
+  },
+});
