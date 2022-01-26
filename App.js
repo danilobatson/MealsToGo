@@ -17,6 +17,7 @@ import {
 import { useFonts as useLato, Lato_400Regular } from "@expo-google-fonts/lato";
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { Navigation } from "./src/infrastructure/navigation"
 
 import { SafeArea } from './src/components/utils/safe-area.component'
 
@@ -72,18 +73,7 @@ export default function App() {
         <LocationContextProvider>
           <RestaurantsContextProvider>
             <ModalContextProvider>
-          <NavigationContainer>
-            <Tab.Navigator
-              screenOptions={{
-                activeTintColor: `${colors.brand.secondary}`,
-                inactiveTintColor: `${colors.ui.secondary}`,
-              }, createScreenOptions
-              }>
-              <Tab.Screen name="Restaurants" component={RestaurantsScreen} />
-                  <Tab.Screen name="Map" component={MapScreen} />
-              <Tab.Screen name="Settings" component={Settings} />
-            </Tab.Navigator>
-              </NavigationContainer>
+          <Navigation />
             </ModalContextProvider>
           </RestaurantsContextProvider>
         </LocationContextProvider>
@@ -92,6 +82,7 @@ export default function App() {
     </>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {

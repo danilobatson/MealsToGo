@@ -8,7 +8,7 @@ const SearchContainer = styled.View`
   padding: ${(props) => props.theme.space.L};
   position: absolute;
   z-index: 999;
-  top: 35px;
+  top: 40px;
   width: 100%;
 `;
 

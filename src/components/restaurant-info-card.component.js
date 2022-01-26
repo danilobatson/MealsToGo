@@ -7,7 +7,7 @@ import { Card, Button, } from "react-native-paper";
 import { SvgXml } from "react-native-svg";
 import { RestaurantCard, Closed, IconView, RightIconsView, Rating, CardCover, Address, Title, ModalView, ButtonView } from './styles/restaurant-info-card-styles'
 
-import { Menu } from './menu.component'
+import { Menu } from '../features/restaurants/screens/menu.component'
 import star from "../../assets/star";
 import open from "../../assets/open";
 
