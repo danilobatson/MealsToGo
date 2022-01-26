@@ -82,7 +82,16 @@ export default function App() {
     </>
   );
 }
-
+<>
+  <ThemeProvider theme={theme}>
+    <LocationContextProvider>
+      <RestaurantsContextProvider>
+        <Navigation />
+      </RestaurantsContextProvider>
+    </LocationContextProvider>
+  </ThemeProvider>
+  <ExpoStatusBar style="auto" />
+</>
 
 const styles = StyleSheet.create({
   container: {
