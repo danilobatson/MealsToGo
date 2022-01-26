@@ -16,10 +16,9 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import { SafeArea } from './src/components/utils/safe-area.component'
-
 import { colors } from './src/infrastructure/theme/colors'
-
 import { RestaurantsContextProvider } from "./src/services/restaurants/restaurants.context";
+import { Navigation } from './src/infrastructure/navigation/'
 
 const isAndroid = Platform.OS === 'android';
 const isIOS = Platform.OS === 'ios';
@@ -69,18 +68,7 @@ export default function App() {
       <ThemeProvider theme={theme}>
         <LocationContextProvider>
         <RestaurantsContextProvider>
-          <NavigationContainer>
-            <Tab.Navigator
-              screenOptions={{
-                activeTintColor: `${colors.brand.secondary}`,
-                inactiveTintColor: `${colors.ui.secondary}`,
-              }, createScreenOptions
-              }>
-              <Tab.Screen name="Restaurants" component={RestaurantsScreen} />
-              <Tab.Screen name="Map" component={Map} />
-              <Tab.Screen name="Settings" component={Settings} />
-            </Tab.Navigator>
-          </NavigationContainer>
+            <Navigation/>
           </RestaurantsContextProvider>
         </LocationContextProvider>
       </ThemeProvider>

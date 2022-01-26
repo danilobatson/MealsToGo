@@ -3,7 +3,7 @@ import styled from "styled-components/native";
 import { Image, View } from "react-native";
 import { Card, Button } from "react-native-paper";
 import { SvgXml } from "react-native-svg";
-import { TextContent} from '../components/typography/text.component'
+import { TextContent } from '../components/typography/text.component'
 import { RestaurantCard, Closed, IconView, RightIconsView, Rating, CardCover, Address, Title } from './styles/restaurant-info-card-styles'
 import { Spacer } from "../components/spacer/spacer.component";
 
@@ -23,6 +23,7 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
     isOpenNow = true,
     rating = 4,
     isClosedTemporarily = false,
+    placeId,
   } = restaurant;
 
   const ratingArray = Array.from(new Array(Math.floor(rating)))
@@ -36,11 +37,14 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
           <Address >{address} </Address>
           <IconView>
             <Rating>
-              {ratingArray.map((rating, idx) => {
-                return (
-                  <SvgXml key={idx} xml={star} width={30} height={30} />
-                )
-              })}
+              {ratingArray.map((_, idx) => (
+                <SvgXml
+                  key={`star-${placeId}-${idx}`}
+                  xml={star}
+                  width={30}
+                  height={30}
+                />
+              ))}
             </Rating>
             {isClosedTemporarily ? <Closed variant="label">
               CLOSED TEMPORARILY

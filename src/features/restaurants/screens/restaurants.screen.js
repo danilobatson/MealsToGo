@@ -12,7 +12,7 @@ import { colors } from '../../../infrastructure/theme/colors'
 
 export const RestaurantsScreen = () => {
 
-  const { isLoading, error, restaurants } = useContext(RestaurantsContext);
+  const { isLoading, restaurants } = useContext(RestaurantsContext);
 
   return (
     <SafeArea>
