@@ -35,14 +35,9 @@ const Tab = createBottomTabNavigator();
 const TAB_ICON = {
   Restaurants: "md-restaurant",
   Map: "md-map",
-  Settings: "md-settings",
 };
 
-const Settings = () => (
-  <SafeArea>
-    <Text>Settings</Text>
-  </SafeArea>
-);
+
 
 
 const createScreenOptions = ({ route }) => {
