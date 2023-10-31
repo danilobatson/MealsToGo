@@ -1,7 +1,5 @@
 appId: com.dbatson09.MealsToGo
 ---
-# - launchApp:
-#     appId: com.dbatson09.MealsToGo
 - openLink:
     link: https://staging.lunarcrush.com
     autoVerify: true
@@ -10,13 +8,8 @@ appId: com.dbatson09.MealsToGo
 - tapOn: Password
 - inputText: spooner
 - tapOn: Sign in
-# - tapOn: Fetch development servers
-# - tapOn: Fetch development servers
-# - tapOn: Fetch development servers
-# - tapOn: Fetch development servers
-# - tapOn: Fetch development servers
-# - tapOn: Fetch development servers
-# - tapOn: Fetch development servers
-# - tapOn: Fetch development servers
-- waitForAnimationToEnd:
-      timeout: 3000
+- tapOn: Never
+- tapOn:
+      id: closeOnboardingModalButton
+- asserVisible:
+      id: mainSearch
