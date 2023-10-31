@@ -19,7 +19,6 @@ jobs:
           distribution: 'temurin'
       - run: curl -Ls "https://get.maestro.mobile.dev" | bash
       - run: export PATH="$PATH":"$HOME/.maestro/bin"
-      - run: source ~/.maestro
       - run: source ~/.maestro/bin
       - run: maestro
       - run: maestro start-device --platform android
