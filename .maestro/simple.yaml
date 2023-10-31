@@ -5,11 +5,10 @@ appId: com.dbatson09.MealsToGo
 - openLink:
     link: https://staging.lunarcrush.com
     autoVerify: true
-- tapOn: Username
-- inputText: Lunar
+- waitForAnimationToEnd
+- inputText: lunar
 - tapOn: Password
-- inputText: Spooner
-- pressKey: Enter
+- inputText: spooner
 - tapOn: Sign in
 # - tapOn: Fetch development servers
 # - tapOn: Fetch development servers
@@ -20,4 +19,4 @@ appId: com.dbatson09.MealsToGo
 # - tapOn: Fetch development servers
 # - tapOn: Fetch development servers
 - waitForAnimationToEnd:
-      timeout: 5000
+      timeout: 3000
