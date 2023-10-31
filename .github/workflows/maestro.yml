@@ -1,0 +1,30 @@
+name: Build and upload to Maestro Cloud 
+
+on:
+  schedule:
+  - cron: "22 6 * * 0-6"
+  - cron: "22 11 * * 0-6"
+
+jobs:
+  maestro-cloud:
+    runs-on: ubuntu-latest
+    outputs:
+      app: app/build/outputs/apk/debug
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-java@v3
+        with:
+          java-version: 11
+          distribution: 'temurin'
+      - uses: mobile-dev-inc/action-maestro-cloud@v1
+        with:
+          api-key: ${{ secrets.MAESTRO_CLOUD_API_KEY }}
+          app-binary-id: ${{ secrets.MAESTRO_CLOUD_APP_BINARY_ID }}
+          name: Scheduled Launch Test
+      - name: Access Outputs
+        if: always()
+        run: |
+          echo "Console URL: ${{ steps.upload.outputs.MAESTRO_CLOUD_CONSOLE_URL }}"
+          echo "Flow Results: ${{ steps.upload.outputs.MAESTRO_CLOUD_FLOW_RESULTS }}"
+          echo "Upload Status: ${{ steps.upload.outputs.MAESTRO_CLOUD_UPLOAD_STATUS }}"
+          echo "App Binary ID:: ${{ steps.upload.outputs.MAESTRO_CLOUD_APP_BINARY_ID }}"
