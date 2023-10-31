@@ -2,7 +2,9 @@ appId: com.dbatson09.MealsToGo
 ---
 # - launchApp:
 #     appId: com.dbatson09.MealsToGo
-- openLink: https://staging.lunarcrush.com
+- openLink:
+    link: https://staging.lunarcrush.com
+    autoVerify: true
 - tapOn: Username
 - inputText: Lunar
 - tapOn: Password
