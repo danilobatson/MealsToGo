@@ -1,16 +1,16 @@
 appId: com.dbatson09.MealsToGo
 ---
-- launchApp:
-    appId: com.dbatson09.MealsToGo
-# - openLink: exp://192.168.1.242:8082
-- tapOn: Fetch development servers
-- tapOn: Fetch development servers
-- tapOn: Fetch development servers
-- tapOn: Fetch development servers
-- tapOn: Fetch development servers
-- tapOn: Fetch development servers
-- tapOn: Fetch development servers
-- tapOn: Fetch development servers
+# - launchApp:
+#     appId: com.dbatson09.MealsToGo
+- openLink: https://www.lunarcrush.com
+# - tapOn: Fetch development servers
+# - tapOn: Fetch development servers
+# - tapOn: Fetch development servers
+# - tapOn: Fetch development servers
+# - tapOn: Fetch development servers
+# - tapOn: Fetch development servers
+# - tapOn: Fetch development servers
+# - tapOn: Fetch development servers
 - assertVisible:
     text: Restaurants
     index: 0
