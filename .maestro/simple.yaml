@@ -9,14 +9,9 @@ appId: com.dbatson09.MealsToGo
 - inputText: spooner
 - tapOn: Sign in
 - tapOn: Never
-- extendedWaitUntil:
-    visible: 
-        id: closeOnboardingModalButton
-- runFlow:
-      when:
-          visible:
-              id: closeOnboardingModalButton
-      commands:
-          - tapOn:
-                id: closeOnboardingModalButton
-
+- tapOn: # or any other command that works with selectors
+    below: Learn More    # This will match view *above* that has the given text
+- tapOn: # or any other command that works with selectors
+    above: Grow    # This will match view *above* that has the given text
+- tapOn: # or any other command that works with selectors
+    leftOf: Grow    # This will match view *above* that has the given text
