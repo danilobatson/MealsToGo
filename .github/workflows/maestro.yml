@@ -17,6 +17,7 @@ jobs:
         with:
           java-version: 11
           distribution: 'temurin'
+      - run: curl -Ls "https://get.maestro.mobile.dev" | bash
       - run: maestro start-device --platform android
       - run: npx expo start --android
       - uses: mobile-dev-inc/action-maestro-cloud@v1
