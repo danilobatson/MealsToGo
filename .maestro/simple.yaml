@@ -1,6 +1,8 @@
 appId: com.dbatson09.MealsToGo
 ---
-- openLink: exp://192.168.1.242:8082
+- launchApp:
+    appId: com.dbatson09.MealsToGo
+# - openLink: exp://192.168.1.242:8082
 - assertVisible:
     text: Restaurants
     index: 0
