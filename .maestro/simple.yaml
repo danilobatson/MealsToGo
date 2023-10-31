@@ -1,0 +1,4 @@
+appId: com.dbatson09.MealsToGo
+---
+- launchApp:
+    appId: com.dbatson09.MealsToGo
