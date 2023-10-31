@@ -7,7 +7,7 @@ on:
   - cron: "22 11 * * 0-6"
 
 jobs:
-  maestro-cloud:
+  server:
     runs-on: ubuntu-latest
     outputs:
       app: app/build/outputs/apk/debug
@@ -17,8 +17,11 @@ jobs:
         with:
           java-version: 11
           distribution: 'temurin'
-      - run: yarn add expo
+      - run: npm i
       - run: npx expo start
+  maestro-cloud: 
+      runs-on: ubuntu-latest
+      steps: 
       - uses: mobile-dev-inc/action-maestro-cloud@v1
         with:
           api-key: ${{ secrets.MAESTRO_CLOUD_API_KEY }}
