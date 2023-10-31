@@ -9,7 +9,14 @@ appId: com.dbatson09.MealsToGo
 - inputText: spooner
 - tapOn: Sign in
 - tapOn: Never
-- tapOn:
-      id: closeOnboardingModalButton
-- assertVisible:
-      id: mainSearch
+- extendedWaitUntil:
+    visible: 
+        id: closeOnboardingModalButton
+- runFlow:
+      when:
+          visible:
+              id: closeOnboardingModalButton
+      commands:
+          - tapOn:
+                id: closeOnboardingModalButton
+
