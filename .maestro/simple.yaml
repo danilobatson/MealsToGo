@@ -10,6 +10,7 @@ appId: com.dbatson09.MealsToGo
 - tapOn: Password
 - inputText: Spooner
 - pressKey: Enter
+- tapOn: Sign in
 # - tapOn: Fetch development servers
 # - tapOn: Fetch development servers
 # - tapOn: Fetch development servers
@@ -19,5 +20,4 @@ appId: com.dbatson09.MealsToGo
 # - tapOn: Fetch development servers
 # - tapOn: Fetch development servers
 - waitForAnimationToEnd
-- waitForAnimationToEnd
-- waitForAnimationToEnd
+    timeout: 5000
