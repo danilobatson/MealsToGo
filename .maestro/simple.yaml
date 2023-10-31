@@ -11,5 +11,5 @@ appId: com.dbatson09.MealsToGo
 - tapOn: Never
 - tapOn:
       id: closeOnboardingModalButton
-- asserVisible:
+- assertVisible:
       id: mainSearch
