@@ -19,5 +19,5 @@ appId: com.dbatson09.MealsToGo
 # - tapOn: Fetch development servers
 # - tapOn: Fetch development servers
 # - tapOn: Fetch development servers
-- waitForAnimationToEnd
-    timeout: 5000
+- waitForAnimationToEnd:
+      timeout: 5000
