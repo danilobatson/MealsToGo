@@ -17,12 +17,7 @@ jobs:
         with:
           java-version: 11
           distribution: 'temurin'
-      - run: curl -Ls "https://get.maestro.mobile.dev" | bash
-      - run: export PATH="$PATH":"$HOME/.maestro/bin"
-      - run: source ~/.maestro/bin
-      - run: maestro
-      - run: maestro start-device --platform android
-      - run: npx expo start --android
+      - run: npx expo start
       - uses: mobile-dev-inc/action-maestro-cloud@v1
         with:
           api-key: ${{ secrets.MAESTRO_CLOUD_API_KEY }}
