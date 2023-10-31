@@ -1,4 +1,15 @@
 appId: com.dbatson09.MealsToGo
 ---
-- launchApp:
-    appId: com.dbatson09.MealsToGo
+- openLink: exp://192.168.1.242:8082
+- assertVisible:
+    text: Restaurants
+    index: 0
+- assertVisible: San Francisco
+- tapOn: Zuni Café
+- assertVisible:
+    text: Breakfast
+    index: 1
+- tapOn: GO BACK
+- assertNotVisible:
+    text: Breakfast
+    index: 1
