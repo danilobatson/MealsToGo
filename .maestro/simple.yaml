@@ -10,8 +10,6 @@ appId: com.dbatson09.MealsToGo
 - tapOn: Sign in
 - tapOn: Never
 - tapOn: # or any other command that works with selectors
-    below: Learn More    # This will match view *above* that has the given text
-- tapOn: # or any other command that works with selectors
     above: Grow    # This will match view *above* that has the given text
 - tapOn: # or any other command that works with selectors
     leftOf: Grow    # This will match view *above* that has the given text
