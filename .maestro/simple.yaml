@@ -14,5 +14,5 @@ appId: com.dbatson09.MealsToGo
           visible: Measure
       commands:
           - tapOn:
-                point: "93%,28%"
+                id: closeOnboardingModalButton
  
